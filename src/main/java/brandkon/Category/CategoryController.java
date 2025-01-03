@@ -1,11 +1,9 @@
-package brandkon;
+package brandkon.Category;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
-import static org.antlr.v4.runtime.tree.xpath.XPath.findAll;
 
 @RestController
 public class CategoryController {
@@ -16,8 +14,8 @@ public class CategoryController {
     }
 
     @GetMapping("/categories")
-    List<CategoryResponse>read(){
-    return CategoryService.findAll();
+    public List<CategoryResponse> getAll() {
+        return categoryService.getAll();
     }
 
 }

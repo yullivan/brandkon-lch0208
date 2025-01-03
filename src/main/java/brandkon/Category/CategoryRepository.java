@@ -1,6 +1,5 @@
-package brandkon;
+package brandkon.Category;
 
-import jdk.jfr.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoryRepository extends JpaRepository<Category,Long> {
